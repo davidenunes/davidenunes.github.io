@@ -10,8 +10,10 @@ permalink:        pretty
 title:            Davide Nunes
 tagline:          'A Jekyll theme'
 description:      '<b><a href="http://twitter.com/davidelnunes" target="_blank">@davidelnunes</a></b>: research scientist :: machine learning, NLP, representation learning, and multi-agent systems'
-url:              davidenunes.com
-baseurl:          /
+
+url:              'https://davidenunes.com'
+
+baseurl:          '/'
 
 author:
   name:           'Davide Nunes'
