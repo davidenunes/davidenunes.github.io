@@ -1,0 +1,27 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+#relative_permalinks: true
+
+# Setup
+title:            Davide Nunes
+tagline:          'A Jekyll theme'
+description:      '<b><a href="http://twitter.com/davidelnunes" target="_blank">@davidelnunes</a></b>: research scientist :: machine learning, NLP, representation learning, and multi-agent systems'
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Davide Nunes'
+  url:            davidenunes.com
+  email:          mail@davidenunes.com
+
+paginate:         5
+
+github:
+  repo:           https://github.com/davidenunes
+
+twitter:
+  handle:         davidelnunes
