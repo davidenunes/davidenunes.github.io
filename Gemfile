@@ -7,7 +7,7 @@ gem "jekyll", ">= 3.6.3"
 
 group :jekyll_plugins do
 	gem 'jekyll-paginate'
-	gem 'redcarpet'
+	gem 'kramdown'
 	gem 'rouge'
 	gem 'jekyll-gist'
 end

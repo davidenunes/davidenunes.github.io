@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      rouge
 
 # Permalinks
@@ -10,7 +10,7 @@ permalink:        pretty
 title:            Davide Nunes
 tagline:          'A Jekyll theme'
 description:      '<b><a href="http://twitter.com/davidelnunes" target="_blank">@davidelnunes</a></b>: research scientist :: machine learning, NLP, representation learning, and multi-agent systems'
-url:              http://hyde.getpoole.com
+url:              http://davidenunes.com
 baseurl:          /
 
 author:
