@@ -52,7 +52,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    redcarpet (3.4.0)
     rouge (1.11.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
@@ -72,7 +71,7 @@ DEPENDENCIES
   jekyll (>= 3.6.3)
   jekyll-gist
   jekyll-paginate
-  redcarpet
+  kramdown
   rouge
 
 BUNDLED WITH
