@@ -5,6 +5,6 @@ gem 'jekyll'
 group :jekyll_plugins do
 	gem 'jekyll-paginate'
 	gem 'redcarpet'
-	gem 'pygments.rb'
+	gem 'rouge'
 	gem 'jekyll-gist'
 end
