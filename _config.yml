@@ -15,7 +15,7 @@ baseurl:          /
 
 author:
   name:           'Davide Nunes'
-  url:            davidenunes.com
+  url:            https://davidenunes.com
   email:          mail@davidenunes.com
 
 paginate:         5
