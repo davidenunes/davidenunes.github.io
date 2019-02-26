@@ -57,9 +57,9 @@ html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 .content h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat";
+  font-family: "Noto Sans";
   font-weight: bold;
-  color: #313131;
+  color: #d8d8d8;
   text-rendering: optimizeLegibility;
 }
 
@@ -80,7 +80,7 @@ html {
   margin-bottom: 1em;
 }
 .post-list .post-date{
-  color: rgba(0, 0, 0, 0.4);
+  color: #d8d8d8;
   float: right;
 }
 
