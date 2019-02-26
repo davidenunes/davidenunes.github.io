@@ -30,10 +30,39 @@
  *
  * Update the foundational and global aspects of the page.
  */
+ @font-face {
+  font-family: "Noto Sans";
+  src: url(/public/fonts/NotoSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  }
+  @font-face {
+    font-family: "Noto Sans";
+    src: url(/public/fonts/NotoSans-Bold.ttf) format("truetype");
+    font-weight: bold;
+    }
+@font-face {
+  font-family: "Montserrat";
+  src: url(/public/fonts/Montserrat-Regular.ttf) format("truetype");
+  font-weight: normal; 
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(/public/fonts/Montserrat-Bold.ttf) format("truetype");
+  font-weight: bold; 
+}
+
+
 
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
+.content h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #313131;
+  text-rendering: optimizeLegibility;
+}
+
 @media (min-width: 48em) {
   html {
     font-size: 16px;
@@ -177,6 +206,7 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
+  font-family: "Noto Sans";
   padding-top:    4rem;
   padding-bottom: 4rem;
 }
