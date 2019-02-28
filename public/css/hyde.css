@@ -101,10 +101,14 @@ html {
 }
 
 .image.avatar img {
-  margin-left: 20%;
+  display: block;
+  margin-left: auto;
   margin-right: auto;
+  width: 175px;
+  /*margin-left: 20%;
+  #margin-right: auto;
+  width: 65%;*/
   border-radius: 100%;
-  width: 65%;
 }
 
 /* Paralax Side */
