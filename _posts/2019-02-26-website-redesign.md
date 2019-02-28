@@ -5,9 +5,7 @@ comments: True
 date: 2019-02-26
 ---
 
-I redesigned my website using [Jekyll](http://jekyllrb.com). This two-column theme is inspired by [Hyde](http://hyde.getpoole.com/) with an added profile picture, and a dark color scheme.
-
-**Syntax highlighting** uses the [darcula](https://github.com/kakawait/pygments-darcula/blob/master/darcula.css) theme:
+I redesigned my website using [Jekyll](http://jekyllrb.com). This two-column theme is inspired by [Hyde](http://hyde.getpoole.com/) with an added profile picture, sidebar background image, and a slightly different color scheme and fonts.
 
 {% highlight js %}
 // This is a comment in Javascript

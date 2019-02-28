@@ -59,7 +59,7 @@ html {
 .content h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Sans";
   font-weight: bold;
-  color: #d8d8d8;
+  color: #202020;
   text-rendering: optimizeLegibility;
 }
 
@@ -80,7 +80,7 @@ html {
   margin-bottom: 1em;
 }
 .post-list .post-date{
-  color: #d8d8d8;
+  color: #717171;
   float: right;
 }
 
