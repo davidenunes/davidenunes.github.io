@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Davide Nunes"
   avatar           : "/assets/avatar.jpg"
-  bio              : "research scientist :: machine learning engineer :: musician"
+  bio              : "# Research Scientist <br /># AI Engineer <br /> # Musician"
   location         : "Lisbon, Portugal"
   email            : 
   links:
@@ -261,16 +261,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+   enabled:
+     - categories
+     - tags
+   layouts:
+     category: archive-taxonomy
+     tag: archive-taxonomy
+   permalinks:
+     category: /categories/:name/
+     tag: /tags/:name/
 
 
 # HTML Compression

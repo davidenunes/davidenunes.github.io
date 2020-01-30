@@ -12,7 +12,7 @@
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt=""></a>
         {% endunless %}
         <!--{{ site.masthead_title | default: site.title }}-->
-        <a class="site-title" href="{{ '/' | relative_url }}">Home</a>
+        <a class="site-title" href="{{ '/' | relative_url }}" style="margin-left: 0.2rem;margin-right: 0.8rem">Home</a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             {%- if link.url contains '://' -%}

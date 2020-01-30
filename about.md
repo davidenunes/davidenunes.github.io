@@ -5,8 +5,5 @@ author_profile: true
 ---
 
 
-Hello there  <i class="fas fa-bullhorn fa-flip-horizontal"></i>(°-°)ノ ┻━┻
-
-My name is **Davide Nunes**, I'm a research scientist and musician based in Lisbon, Portugal. I’m building Artificial Intelligence systems for natural language understanding, developing machine learning algorithms, and philosophising about consciousness, intelligence, and autonomy.
-
-I’m doing my PhD in computer science at the University of Lisbon, working in artificial intelligence at the Biosystems and Integrative Sciences Institute (BioISI). In the past I also published work in Agent-Based Modelling, Social Simulation, and Complex Social Networks.
+Hello! -(°-°)ノ┻━┻ I'm a research scientist and musician based in Lisbon, Portugal. I build Artificial Intelligence systems for natural language understanding, machine translation, representation learning, and "lifelong" machine learning systems capable of continuous adaptation. I'm also interested in the philosophy of consciousness, intelligence, and autonomy <br/><br/>&emsp;&mdash; although I'm more and more convinced that artificial intelligence will never match natural stupidity, one can dream ...
+{: style="text-align: justify;"}
