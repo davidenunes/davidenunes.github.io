@@ -29,14 +29,14 @@ are meant to solve.
 
 This thesis explores techniques to ground the meaning of words by learning
 representations acquired from text corpora . Artificial Neural Network (ANN)
-models are acapable of learning robust distributed representation and generalise
+models are capable of learning robust distributed representation and generalise
 to unseen data, however, existing neural network-based approaches require
 knowledge about vocabulary size. This not only makes them computationally
 expensive for large vocabularies, but also prevents them from being deployed in
 an incremental, and cumulative fashion. This work solves this problem by
 compressing the input space with random projections, and puts forward a new
 estimator inspired by optimal transport theory. The contributions of this thesis
-allow for ANN models to learn representations and solve tasks incrementally, in
+allow for ANN models to learn representations and solve tasks incrementally in
 open domains. This makes these models capable of tackling language dynamics in
 large scale settings, furthermore, and contrary to existing approaches, the
 achieved computational and memory efficiency allows the models to be deployed in
