@@ -53,8 +53,7 @@ machine learning. In this view, continuous representation learning and
 forgetting forms the basis for lifelong adaptation. The proposed principles are
 applicable beyond natural language domains and open new research directions that
 would allows us not only to learn representations for complex discrete
-structured inputs, but also to make structured predictions in complex open
-domains.
+structured inputs, but also to make structured predictions in complex open-endend environments.
 
 
 <!--
