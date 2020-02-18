@@ -30,22 +30,32 @@ are meant to solve.
 This thesis explores techniques to ground the meaning of words by learning
 representations acquired from text corpora . Artificial Neural Network (ANN)
 models are acapable of learning robust distributed representation and generalise
-to unseen data, however, existing neural network-based models require knowledge
-about vocabulary size. This not only makes them computationally expensive for
-large vocabularies, but also prevents them from being deployed in an online
-fashion. This work solves this problem by compressing the input space with
-random projections, and puts forward a new estimator inspired by optimal
-transport theory. The contributions of this thesis allow for ANN models to work
-in an online incremental fashion, thus making them capable of tackling language
-dynamics in large scale settings. 
+to unseen data, however, existing neural network-based approaches require
+knowledge about vocabulary size. This not only makes them computationally
+expensive for large vocabularies, but also prevents them from being deployed in
+an incremental, and cumulative fashion. This work solves this problem by
+compressing the input space with random projections, and puts forward a new
+estimator inspired by optimal transport theory. The contributions of this thesis
+allow for ANN models to learn representations and solve tasks incrementally, in
+open domains. This makes these models capable of tackling language dynamics in
+large scale settings, furthermore, and contrary to existing approaches, the
+achieved computational and memory efficiency allows the models to be deployed in
+resource-limited settings.  
 
 The solutions are evaluated in the context of language modelling tasks in
 multiple text corpora. The proposed _compressive prediction_ ANN
 architectures make a trade-off between an acceptable amount of error, and the
 capacity to encode words from a vocabulary of unknown size. Competitive results
 are achieved with more compact models when compared with state-of-the-art
-language models. Contrary to existing approaches, model deployment can be made
-in limited resource setting without critical loss in performance.
+language models. The presented mehchanisms can be seen as a form of
+auto-associative memory that provides a different view for self-supervised
+machine learning. In this view, continuous representation learning and
+forgetting forms the basis for lifelong adaptation. The proposed principles are
+applicable beyond natural language domains and open new research directions that
+would allows us not only to learn representations for complex discrete
+structured inputs, but also to make structured predictions in complex open
+domains.
+
 
 <!--
 
