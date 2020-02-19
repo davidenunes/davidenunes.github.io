@@ -1,5 +1,5 @@
 ---
-title: "[Book] The Ignorant Schoolmaster"
+title: "The Ignorant Schoolmaster"
 excerpt_separator: "<!--more-->"
 sidebar: False
 share: True
