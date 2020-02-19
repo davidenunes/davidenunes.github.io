@@ -53,11 +53,10 @@ else as a way to deal with our innate biases. Reason (and the awareness to
 reason) is perhaps the way to avoid "falling into the gravitational field of
 other minds". 
 
-Another recurrent theme is a critique to those you boast about theories of
-pedagogical reform that often seem to serve as justification for a series of
-at­tempts to reform the social inequities of the school system without realizing
-that school is not a preparation for life, but a reflection that models it's
-stratification.
+Another recurrent theme is a critique of proponents of theories of pedagogical
+reform that often seem to serve as justification for a series of at­tempts to
+reform the social inequities of the school system without realizing that school
+is not a preparation for life, but a reflection that models it's stratification.
 
 > For if science (theory) forms an enclave of freedom in a world of ideological
 > enslavement, if science belongs to the intellectuals &mdash;the masters&mdash;
