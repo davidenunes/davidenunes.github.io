@@ -47,12 +47,12 @@ multiple text corpora. The proposed _compressive prediction_ ANN
 architectures make a trade-off between an acceptable amount of error, and the
 capacity to encode words from a vocabulary of unknown size. Competitive results
 are achieved with more compact models when compared with state-of-the-art
-language models. The presented mehchanisms can be seen as a form of
+language models. The presented mechanisms can be seen as a form of
 auto-associative memory that provides a different view for self-supervised
 machine learning. In this view, continuous representation learning and
 forgetting forms the basis for lifelong adaptation. The proposed principles are
 applicable beyond natural language domains and open new research directions that
-would allows us not only to learn representations for complex discrete
+would allow us not only to learn representations for complex discrete
 structured inputs, but also to make structured predictions in complex open-endend environments.
 
 
