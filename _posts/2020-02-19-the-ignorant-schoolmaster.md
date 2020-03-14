@@ -1,29 +1,40 @@
 ---
 title: "The Ignorant Schoolmaster"
-excerpt_separator: "<!--more-->"
+excerpt: "The book The Ignorant Schoolmaster by the French philosopher Jacques
+    Rancière explores the idea of _equality of minds_ while criticizing theories
+    of pedagogical reform, biased against intellectual emancipation."
 sidebar: False
 share: True
 comments: True
+#header:
+#  overlay_color: "#000"
+#  overlay_filter: "0.5"
+#  overlay_image: /assets/images/posts/book_ignorant_schoolmaster.jpg
 categories:
   - books
-  - scrapbook
+  - scrapbook 
 ---
+
+{% include feature_row id="intro" type="center" %}
 
 The book [The Ignorant Schoolmaster: Five Lessons in Intellectual
 Emancipation](http://www.goodreads.com/book/show/445408.The_Ignorant_Schoolmaster)
 (1987), by the French philosopher Jacques Rancière, presents the notion of
 _intellectual emancipation_. He explores the idea of _equality of minds_ while
-criticizing theories of pedagogical reform for failling to acccount for the fact
+criticizing theories of pedagogical reform for failing to account for the fact
 that one cannot remove bias the education system using theories born from and
 designed to reinforce the very same bias they intend to remove.
 
-![]({{ site.url }}/assets/images/posts/book_ignorant_schoolmaster.jpg)
+<figure>
+	<a href="{{ site.url }}/assets/images/posts/book_ignorant_schoolmaster.jpg">
+  <img src="{{ site.url }}/assets/images/posts/book_ignorant_schoolmaster.jpg"></a>
+</figure>
 
 Every time I find myself ranting about what makes something art, communication
 always comes to mind:
 
 >"The impossibility of our saying the truth, even when we feel it, makes us
->speak as poets, makes us tell the story of our minds’s adventures and verify
+>speak as poets, makes us tell the story of our mind’s adventures and verify
 >that they are understood by other adventurers."
 
 and communication is so much about thinking as it is about doing:
