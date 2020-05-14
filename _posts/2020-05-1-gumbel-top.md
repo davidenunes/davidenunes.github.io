@@ -109,8 +109,7 @@ If we look at the **Gumbel-Max** trick as form of weighted reservoir sampling,
 we can see that if instead of _arg max_ we take the _top-k_ args, we are
 instead, sampling without replacement from the discrete categorical
 distribution. We can call this the [**Gumble-Top**
-trick](http://disq.us/p/1xber9v). Apparently, after this post someone used this
-straightforward name for the trick [here](https://arxiv.org/abs/1903.06059).
+trick](http://disq.us/p/1xber9v). 
 
 ## The Reparameterization Trick in Neural Networks
 The [reparameterization trick](https://arxiv.org/pdf/1611.00712.pdf) allows for
