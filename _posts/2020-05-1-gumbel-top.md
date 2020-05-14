@@ -232,7 +232,7 @@ To get the top-k elements in sorted order in this way takes O(n + k log k) time.
 
 6. Efraimidis, Pavlos S., and Paul G. Spirakis. "Weighted random sampling with a
    reservoir." Information Processing Letters 97.5 (2006): 181-185.
-   [url][http://utopia.duth.gr/~pefraimi/research/data/2007EncOfAlg.pdf]
+   [url](http://utopia.duth.gr/~pefraimi/research/data/2007EncOfAlg.pdf)
 
 7. Kool, Wouter, Herke Van Hoof, and Max Welling. "Stochastic beams and where to
    find them: The gumbel-top-k trick for sampling sequences without
