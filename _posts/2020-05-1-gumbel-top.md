@@ -1,5 +1,5 @@
 ---
-title: "Gumbel-Max Trick"
+title: "Gumbel-Top Trick"
 excerpt_separator: "<!--more-->"
 sidebar: False
 comments: true
