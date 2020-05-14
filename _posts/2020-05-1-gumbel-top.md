@@ -185,7 +185,7 @@ def top_k(x, k):
 def sample_k(logits, k):
     u = np.random.uniform(size=np.shape(logits))
     z = -np.log(-np.log(u))
-    return np_top_k(logits + z, k)
+    return top_k(logits + z, k)
 ```
 
 
