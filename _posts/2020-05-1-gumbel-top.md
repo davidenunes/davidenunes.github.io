@@ -6,9 +6,13 @@ comments: true
 classes: wide
 categories:
   - neural networks
+  - statistics
   - technical
+  - probability 
   - sampling
-  - probability
+  - vectorization
+  - Tensorflow
+  - numpy
 ---
 
 ## How to vectorize sampling from a discrete distribution 
