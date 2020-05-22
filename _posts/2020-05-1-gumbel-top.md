@@ -4,7 +4,7 @@ excerpt_separator: "<!--more-->"
 sidebar: False
 comments: true
 classes: wide
-categories:
+gcategories:
   - neural networks
   - statistics
   - technical
@@ -125,7 +125,7 @@ reparameterization. The choice of noise (e.g. Gumbel) gives the trick its name.
 
 Generally speaking, this trick consists in sampling from \\(p_\phi(x)\\) by
 first sampling \\(Z\\) from some fixed distribution \\(q(z)\\) and then
-transforming the sample using some function \\(g\phi(z)\\). This two step
+transforming the sample using some function \\(g_\phi(z)\\). This two step
 process is precisely what we call _reparameterization trick_, and it is what
 makes it possible to reduce the problem of estimating the gradient w.r.t.
 parameters of a distribution to the simpler problem of estimating the gradient
