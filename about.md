@@ -12,7 +12,7 @@ learning, and "lifelong" continuous adaptation. I'm also interested in the
 philosophy of consciousness, intelligence, and autonomy. 
 
 I previously worked with multi-agent systems and social simulation, trying to
-understand dissemination phenomenon in complex social network structures.
+understand dissemination phenomena in complex social network structures.
 
 <br/><br/>&emsp;&mdash; although I'm convinced artificial intelligence will
 never surpass natural stupidity, one can dream ...
