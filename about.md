@@ -5,15 +5,17 @@ author_profile: true
 ---
 
 
-I'm a research scientist and musician based in Lisbon, Portugal. I build
-Artificial Intelligence systems for natural language understanding, machine
-translation, representation learning, and "lifelong" machine learning systems
-capable of continuous adaptation and deal with uncertainty and open-ended
-domains. I'm also interested in the philosophy of consciousness, intelligence,
-and autonomy. 
+I'm a research scientist and musician based in Lisbon, Portugal. I'm currently
+finishing my PhD at the University of Lisbon. I build Artificial Intelligence
+systems for natural language understanding, machine translation, representation
+learning, and "lifelong" continuous adaptation. I'm also interested in the
+philosophy of consciousness, intelligence, and autonomy. 
+
+I previously worked with multi-agent systems and social simulation, trying to
+understand dissemination phenomenon in complex social network structures.
 
 <br/><br/>&emsp;&mdash; although I'm convinced artificial intelligence will
-never match natural stupidity, one can dream ...
+never surpass natural stupidity, one can dream ...
 {: style="text-align: justify;"}
 
 
