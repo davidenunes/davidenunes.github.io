@@ -213,31 +213,24 @@ To get the top-k elements in sorted order in this way takes O(n + k log k) time.
 
 ### Blog Posts
 
-1. Vieira, Tim. "Gumbel-Max-Trick". 2014
-   [url](https://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/). 
+1. Vieira, Tim. [Gumbel-Max-Trick](https://timvieira.github.io/blog/post/2014/07/31/gumbel-max-trick/). 2014. 
 
-2. Ryans, Adam. "The Gumbel-Max Trick for Discrete Distributions"
-   [url](https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/)
+2. Ryans, Adam. [The Gumbel-Max Trick for Discrete Distributions](https://lips.cs.princeton.edu/the-gumbel-max-trick-for-discrete-distributions/)
    
-3. Mena, Gonzalo. "The Gumbel-Softmax Trick for Inference of Discrete
-   Variables". 2017
-   [url](https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html)
+3. Mena, Gonzalo. [The Gumbel-Softmax Trick for Inference of Discrete Variables](https://casmls.github.io/general/2017/02/01/GumbelSoftmax.html). 2017
 
 ### Papers
 
-3. Maddison, Chris J., Daniel Tarlow, and Tom Minka. "A* sampling." _Advances in
-   Neural Information Processing Systems_. 2014. [url](https://papers.nips.cc/paper/5449-a-sampling.pdf)
+3. Maddison, Chris J., Daniel Tarlow, and Tom Minka. [A* sampling](https://papers.nips.cc/paper/5449-a-sampling.pdf). _Advances in Neural Information Processing Systems_. 2014.
 
-4. Kusner, Matt J., and José Miguel Hernández-Lobato. "Gans for sequences of
-   discrete elements with the gumbel-softmax distribution. [url](https://arxiv.org/abs/1611.04051)
+4. Kusner, Matt J., and José Miguel Hernández-Lobato. [Gans for sequences of discrete elements with the gumbel-softmax distribution](https://arxiv.org/abs/1611.04051).
 
-5. Jang, Eric, Shixiang Gu, and Ben Poole. "Categorical reparameterization with
-   gumbel-softmax." [url](https://arxiv.org/pdf/1611.01144.pdf)
+5. Jang, Eric, Shixiang Gu, and Ben Poole. [Categorical reparameterization with
+   gumbel-softmax.](https://arxiv.org/pdf/1611.01144.pdf)
 
-6. Efraimidis, Pavlos S., and Paul G. Spirakis. "Weighted random sampling with a
-   reservoir." Information Processing Letters 97.5 (2006): 181-185.
-   [url](http://utopia.duth.gr/~pefraimi/research/data/2007EncOfAlg.pdf)
+6. Efraimidis, Pavlos S., and Paul G. Spirakis. [Weighted random sampling with a
+   reservoir](http://utopia.duth.gr/~pefraimi/research/data/2007EncOfAlg.pdf). Information Processing Letters 97.5 (2006): 181-185.
 
-7. Kool, Wouter, Herke Van Hoof, and Max Welling. "Stochastic beams and where to
+7. Kool, Wouter, Herke Van Hoof, and Max Welling. [Stochastic beams and where to
    find them: The gumbel-top-k trick for sampling sequences without
-   replacement." (2019). [url](https://arxiv.org/abs/1903.06059)
+   replacement](https://arxiv.org/abs/1903.06059). (2019).
