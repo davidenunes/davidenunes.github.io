@@ -127,7 +127,9 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      #url: "https://github.com/davidenunes"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+    #  url: "https://gitlab.com/davidenunes"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -147,9 +149,9 @@ footer:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
-    - label: "Medium"
-      icon: "fab fa-fw fa-medium"
-      url: "https://medium.com/@davidelnunes"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/davidenunes"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:

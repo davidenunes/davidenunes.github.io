@@ -1,0 +1,179 @@
+---
+title: PTNews Corpus for Language Modelling 
+layout: splash
+share: false
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/news.jpg
+  caption: By [Davide Nunes](https://davidenunes.com/about/)
+
+#http://hemerotecadigital.cm-lisboa.pt/Periodicos/AImprensa_1919/N01/N01_item1/P1.html
+#https://opensource.google/projects/lm-benchmark
+#https://blog.einstein.ai/the-wikitext-long-term-dependency-language-modeling-dataset/
+#https://arxiv.org/pdf/1905.12616.pdf
+---
+
+{% include feature_row id="intro" type="center" %}
+
+The **PTNews Corpus** is a collection of over 19 million tokens extracted fom 10
+years of political news articles from the Portuguese newspaper
+[PÚBLICO](https://www.publico.pt/). The corpus is available under the [Creative
+Commons Attribution-NonCommercial-ShareAlike Licence](## Licence). 
+
+The corpus sizes between the preprocessed version of Penn Treebank (PTB) and
+[WikiText-103](https://blog.einstein.ai/the-wikitext-long-term-dependency-language-modeling-dataset/).
+Similarly to WikiText, PTNews has a larger vocabulary than PTB and retains the
+original case, punctuation and numbers. This corpus contains over 31000 publicly
+available full articles which makes it well suited for models that can take
+advantage of long-term dependencies.
+
+## Description and Examples
+**PTNews** is preprocessed to be used as a word level **Portuguese corpus**.
+It is available as a series of words or other tokens (like punctuation, numbers,
+etc). The corpus was preprocessed so that users can access the tokens by
+splitting by whitespace. 
+
+In this processed version, the words with less than 3 occurrences are mapped to
+the `<unk>` token. Each sentence in an article body occupies a single line of
+the dataset and the end of paragraph is marked with the `<eop>` token at the end
+of its last sentence. Portuguese words resulting from contractions like
+__desta__, ou __nesta__ are separated into _d_, _esta_, _n_, _esta_,
+respectively.
+
+The corpus is available as a word level collection of articles in two version:
+1. `ptnews_origin` contains a single file with all the articles in the form
+**title**, **URL**, **date**, **body**; 
+2. `ptnews`, contains only the
+**title** and **body** of the news articles and it is split into **train**,
+   **test**, **validation** sets --conveniently ready to be used in settings
+   like machine learning benchmarks.
+
+
+
+
+Example article:
+```
+Carlos César : Cavaco " cansado e sem entusiasmo " quis afastar responsabilidades sobre a crise
+https://publico.pt/2010/06/10/politica/noticia/carlos-cesar-cavaco-cansado-e-sem-entusiasmo-quis-afastar-responsabilidades-sobre-a-crise-1441369
+2010-06-10 15:38:00
+
+O presidente do Governo Regional dos Açores , Carlos César , considerou hoje que Cavaco Silva esteve " cansado e sem entusiasmo " no discurso do Dia de Portugal , onde afastou responsabilidades sobre a actual crise . <eop>
+" O país ouviu um Presidente cansado e sem entusiasmo , que andou às voltas com os papéis para dizer que não tinha nada a ver com as razões da crise " , afirmou Carlos César , num comentário à Lusa sobre o discurso do Presidente da República na cerimónia oficial do 10 de Junho , realizada em Faro . <eop>
+Carlos César considerou , no entanto , " positivo " que Cavaco Silva tenha feito " um discurso alinhado com um tema recorrente na apreciação do momento que vivemos , o da coesão e da corresponsabilização " . <eop>
+No mesmo sentido , manifestou concordância com o apelo que Cavaco Silva fez " à responsabilidade dos empregadores e empregados " , mas deixou um alerta relativamente à referência do Presidente da República à necessidade de " limpar Portugal " . <eop>
+Para Carlos César , se essa referência " for despida de conteúdo institucional útil , tratou-se de mais um discurso que se perderá na babugem política d aquilo que Cavaco Silva entendeu recordar como o ' rectângulo ' " . <eop>
+```
+
+
+## Download & Utils
+
+There are two datasets available: ptnews and ptnews-origin.
+
+* [Download PTNews word level dataset](https://zenodo.org/record/3908507/files/ptnews.tar.gz?download=1)
+
+The **word level ptnews dataset** archive contains 3 files:
+`ptnews.train.tokens`, `ptnews.valid.tokens`, and `ptnews.test.tokens` with the
+__train__, __validation__, and __test__ **splits** respectively. Each of these
+only contains titles and news article bodies. For the full information about
+each article date and url from which it was extracted, see the _origin_ dataset.
+
+
+* [Download PTNews origin dataset](https://zenodo.org/record/3908507/files/ptnews_origin.tar.gz?download=1)
+
+The __origin__ dataset file contains a single file with articles containing a
+title, both the dates and urls from which the news articles were extracted, and
+the article body. 
+
+### Python interface to PTNews
+A Python interface to the PTNews interface for convenient access to the PTNews
+dataset is also available through the `nldata` python package. The package can
+be installed from [PyPI](https://pypi.org/project/nldata/) using `pip` or other
+package manager such as [Poetry](https://python-poetry.org/) or
+[Pipenv](https://pipenv-fork.readthedocs.io/en/latest/).
+
+```bash
+pip install nldata
+```
+
+The `PTNews` corpus class class can be used to read the dataset files downloaded
+above from a given directory, or, to download, extract, and cache them directly
+
+```python
+from nldata.corpora import PTNews
+
+# reads from a local directory
+ptnews = PTNews(data_dir=...)
+
+# alternatively download and cache the files
+ptnews = PTNews()
+
+# get 4 sentences from the train split file (default to all sentences)
+for sentence in ptnews.split("train",n=4):
+  # do something with the sentence 
+  print(sentence)
+```
+If the corpus needs to be downloaded (because no `data_dir` was specified) and
+the files are not in cacheThe, a file download progress is printed to the
+`stdout` (using [`tqdm`](https://tqdm.github.io/)). If you run this a second
+time, the files are already in cache and can be used.
+
+```bash
+Downloading: 100%|██████████| 35.9M/35.9M [00:27<00:00, 1.28MB/s]
+['“', 'Descoloniza', '”', ':', 'estátua', 'de', 'Padre', 'António', 'Vieira', 'vandalizada', 'em', 'Lisboa']
+['A', 'estátua', 'do', 'Padre', 'António', 'Vieira', ',', 'no', 'Largo', 'Trindade', 'Coelho', ',', 'em', 'Lisboa', ',', 'foi', 'vandalizada', 'com', 'a', 'palavra', '“', 'descoloniza', '”', 'pintada', 'a', 'vermelho', '.']
+['A', 'boca', ',', 'mãos', 'e', 'hábito', 'do', 'clérigo', 'foram', 'tingidas', 'de', 'vermelho', 'e', 'no', 'peito', 'das', 'crianças', 'indígenas', 'que', 'estão', 'representadas', 'à', 'sua', 'volta', 'foi', 'pintado', 'um', 'coração', '.']
+['Durante', 'a', 'noite', 'd', 'esta', 'quinta-feira', ',', 'a', 'Câmara', 'de', 'Lisboa', 'procedeu', 'à', 'limpeza', 'da', 'estátua', '.', '“']
+```
+
+If no split `name` is provided, the default is to merge all the splits:
+```python
+# the default for the split is "full" which will merge all the splits into a single iterator
+for sentence in ptnews.split(n=4):
+  print(sentence)
+
+```
+
+
+## Lexical Analysis
+The table below shows the frequency distribution for the 100 most common tokens
+in ptnews The most common token is the space, which occurs 139 million times.
+Note that words starting with an upper case letter are considered distinct from the ones
+starting with lower case letters.
+
+
+
+
+## Citation
+
+## Results & Resources
+If you wish to report results or other resources obtained on the PTNews contact
+[Davide Nunes](mailto:davidenunes@pm.me) with the following information: 
+* **Task**: e.g. Language Modelling, Semantic Similarity, etc;
+* **Publication URL**: url to published article or preprint;
+* **Type of Model**: LSTM Neural Network, n-grams, GloVe vectors, etc;
+* **Evaluation Metrics**: e.g. validation and testing perplexities in the case of language modelling.
+
+## Contact Information
+If you have questions about the corpus or want to report benchmark results,
+contact [Davide Nunes](mailto:davidenunes@pm.me).
+
+## Licence
+[PTNews Corpus](({{site.url}}/about)) by [Davide Nunes]({{site.url}}/about) is
+licensed under CC BY-NC-SA 4.0 <a
+href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img
+style="height:22px!important;margin-left: 3px;"
+src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" /><img
+style="height:22px!important;margin-left: 3px;"
+src="https://mirrors.creativecommons.org/presskit/icons/by.svg" /><img
+style="height:22px!important;margin-left: 3px;"
+src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" /><img
+style="height:22px!important;margin-left: 3px;"
+src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" /></a>. To view
+a copy of this license, visit
+[cc-by-nc-sa/4.0](https://creativecommons.org/licenses/by-nc-sa/4.0). The
+material contained on the PTNews Corpus is &copy; 2010-2020 [PÚBLICO Comunicação
+Social SA](https://www.publico.pt/).
+
+<!--http://static.publico.pt/homepage/site/nos/copyright.asp-->
+
