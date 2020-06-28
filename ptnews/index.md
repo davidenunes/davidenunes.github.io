@@ -41,15 +41,21 @@ of its last sentence. Portuguese words resulting from contractions like
 __desta__, ou __nesta__ are separated into _d_, _esta_, _n_, _esta_,
 respectively.
 
-The corpus is available as a word level collection of articles in two version:
-1. `ptnews_origin` contains a single file with all the articles in the form
-**title**, **URL**, **date**, **body**; 
-2. `ptnews`, contains only the
-**title** and **body** of the news articles and it is split into **train**,
-   **test**, **validation** sets --conveniently ready to be used in settings
-   like machine learning benchmarks.
+Some basic statistics for the ptnews corpus with the respective splits:
+
+|----------+---------------+-------------|
+|Vocabulary|  OoV Tokens    | OoV Rate   |
+|:--------:|:--------------:|:----------:|
+|68 318    |  95.043        |    0.5%    |
+|----------+----------------+------------|
 
 
+|----------+---------------+------------+------------+-----------| 
+|          | Total         |Train       | Valid      | Test      |
+|---------:|:--------------|:----------:|:-----------|:----------|
+| Articles |  31 919       | 25 537     |3 191       | 3 191     |
+| Tokens   |  19 021 661   | 15 242 995 |1 895 184   | 1 883 482 |
+|----------+---------------+------------+------------+-----------|
 
 
 Example article:
@@ -136,15 +142,74 @@ for sentence in ptnews.split(n=4):
 
 
 ## Lexical Analysis
-The table below shows the frequency distribution for the 100 most common tokens
-in ptnews The most common token is the space, which occurs 139 million times.
-Note that words starting with an upper case letter are considered distinct from the ones
-starting with lower case letters.
+The table below shows the frequency distribution for the 20 most common tokens
+in ptnews, and the most common without including [stop
+words](https://en.wikipedia.org/wiki/Stop_words){:target="_blank"} or
+punctuation. The most common token is the the __comma__, which occurs over 1
+million times. Note that words starting with an upper case letter are considered
+distinct from the ones starting with lower case letters.
 
 
+|----+-------------------+-----------|+-------------------+--------|
+|Rank| (All Words)       | Freq      ||(No Stop/No Punct)| Freq   |
+|---:|:------------------|:----------||:------------------|:-------|
+|  1 | ,                 | 1 116 769 || Governo           | 57 886 |
+|  2 | de                | 748 916   || PS                | 47 530 |
+|  3 | a                 | 572 820   || PSD               | 44 775 |
+|  4 | que               | 555 783   || Portugal          | 34 056 |
+|  5 | .                 | 550 757   || República         | 28 773 |
+|  6 | o                 | 453 748   || disse             | 28 207 |
+|  7 | e                 | 405 687   || país              | 26 573 |
+|  8 | do                | 344 723   || António           | 24 661 |
+|  9 | <eop>             | 292 959   || partido           | 24 565 |
+| 10 | da                | 291 415   || política          | 24 432 |
+| 11 | “                 | 233 492   || Costa             | 22 982 |
+| 12 | ”                 | 233 031   || presidente        | 21 017 |
+| 13 | para              | 191 028   || líder             | 20 854 |
+| 14 | "                 | 186 934   || Presidente        | 20 759 |
+| 15 | em                | 173 211   || PCP               | 18 569 |
+| 16 | os                | 167 225   || primeiro-ministro | 18 439 |
+| 17 | não               | 151 092   || afirmou           | 17 675 |
+| 18 | um                | 137 056   || CDS               | 17 525 |
+| 19 | com               | 133 778   || Passos            | 16 890 |
+| 20 | uma               | 131 811   || ministro          | 16 433 |
+|----+-------------------+-----------|+-------------------+--------|
+
+[Zipf's law](https://en.wikipedia.org/wiki/Zipf%27s_law){:target="_blank"}
+states that given some corpus, the frequency of any word is inversely
+proportional to its rank in the frequency table. Thus the most frequent word
+will occur approximately twice as often as the second most frequent word, three
+times as often as the third most frequent word, etc. 
+
+One of the problems with existing corpus like the PTB (frequently used for
+language modeling) is that all the tokens are lower case, stripped of any
+punctuation, and limited to a vocabulary of only 10k words. This preprocessing
+means that there is a lack of words in the long tail of the frequency
+distribution, and these, can be important to applications that have to deal with
+rare words such as named entities.
+
+<figure class="half">
+    <a href="/assets/images/ptnews/zipf.svg"><img src="/assets/images/ptnews/zipf.svg"></a>
+    <a href="/assets/images/ptnews/zipf_nostop.svg"><img src="/assets/images/ptnews/zipf_nostop.svg"></a>
+    <figcaption>Zipfian log-log plot showing the relationship between word rank and
+frequency for the 100k most frequent words, with (left) and without (right) stop words and punctuation.</figcaption>
+</figure>
 
 
 ## Citation
+
+```
+@dataset{Nunes2020_3908507,
+  author       = {Nunes, Davide},
+  title        = {PTNews Corpus},
+  month        = jun,
+  year         = 2020,
+  publisher    = {Zenodo},
+  version      = 1,
+  doi          = {10.5281/zenodo.3908507},
+  url          = {https://doi.org/10.5281/zenodo.3908507}
+}
+```
 
 ## Results & Resources
 If you wish to report results or other resources obtained on the PTNews contact
