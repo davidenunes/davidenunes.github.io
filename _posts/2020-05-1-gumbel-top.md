@@ -13,7 +13,6 @@ categories:
   - sampling
   - Tensorflow
   - NumPy
-  - Jax
 ---
 
 ## How to vectorize sampling from a discrete distribution
