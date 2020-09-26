@@ -4,18 +4,19 @@ excerpt_separator: "<!--more-->"
 sidebar: False
 comments: true
 classes: wide
-gcategories:
+categories:
   - neural networks
   - statistics
   - technical
   - probability 
   - sampling
-  - vectorization
   - Tensorflow
-  - numpy
+  - NumPy
+  - Jax
 ---
 
-## How to vectorize sampling from a discrete distribution 
+## How to vectorize sampling from a discrete distribution
+
 If you work with libraries such as [NumPy](https://numpy.org/),
 [Jax](https://jax.readthedocs.io/en/latest/)
 [Tensorflow](https://www.tensorflow.org/), or [PyTorch](https://pytorch.org/)
@@ -78,8 +79,8 @@ according to a softmax function \\(\sigma(y)\\).
 
 
 <figure class="half">
-    <a href="/assets/images/posts/gumbel_density.svg"><img src="/assets/images/posts/gumbel_density.svg"></a>
-    <a href="/assets/images/posts/gumbel_cumulative.svg"><img src="/assets/images/posts/gumbel_cumulative.svg"></a>
+    <a href="/assets/images/posts/gumbel_density.png"><img src="/assets/images/posts/gumbel_density.png"></a>
+    <a href="/assets/images/posts/gumbel_cumulative.png"><img src="/assets/images/posts/gumbel_cumulative.png"></a>
     <figcaption>Gumbel Probability Density Function (PDF) and  Cumulative Distribution Function (CDF) respectively.</figcaption>
 </figure>
 
