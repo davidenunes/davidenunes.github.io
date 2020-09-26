@@ -1,8 +1,9 @@
 ---
 title: "Gumbel-Top Trick"
 excerpt_separator: "<!--more-->"
-sidebar: False
+sidebar: false
 comments: true
+related: false
 classes: wide
 categories:
   - neural networks
