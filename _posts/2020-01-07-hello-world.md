@@ -15,4 +15,3 @@ ongoing projects Artificial Intelligence in general, Natural Natural Language
 Processing, Machine Learning in particular along with musings on the
 philosophical aspects of intelligence, consciousness, and learning. More about
 me [here]({{site.url}}/about).
-

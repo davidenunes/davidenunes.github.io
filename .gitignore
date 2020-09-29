@@ -1,4 +1,5 @@
 *.gem
+.vscode
 *.sublime-project
 *.sublime-workspace
 .bundle
