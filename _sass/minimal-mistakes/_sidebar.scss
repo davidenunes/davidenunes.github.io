@@ -54,6 +54,11 @@
          viewport height - nav height - masthead x-padding
       */
       height: calc(100vh - #{$nav-height} - 2em);
+
+      
+
+      top: 2.8em;
+
     }
   }
 
@@ -108,7 +113,7 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 2em;
+      top: 4em;
       float: right;
     }
   }
@@ -377,6 +382,8 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+
+  
 }
 
 .author__bio {
