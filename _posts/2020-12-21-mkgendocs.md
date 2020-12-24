@@ -1,12 +1,19 @@
 ---
 title: "Python Autodocs with MkGenDocs"
-excerpt_separator: "<!--more-->"
+excerpt: "Generating documentation from Python docstrings"
 sidebar: False
 comments: True
 toc: true
 toc_label: Table of Contents
 toc_sticky: true
 #classes: wide
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.4"
+  overlay_image: /assets/images/automation.jpg
+  actions:
+    - label: "Github"
+      url: "https://github.com/davidenunes/mkgendocs"
 categories:
   - tools
   - python
@@ -15,11 +22,13 @@ categories:
   - api
 ---
 
-![python automation](/assets/images/automation_python.png)
+# mkgendocs
 
 [mkgendocs](https://github.com/davidenunes/mkgendocs){:target="_blank"} is a
 Python package for automatically generating documentation pages in **markdown**
 from Python source files, by parsing Google-style **docstring**.
+
+![python automation](/assets/images/automation_python.png)
 
 If you search for automated documentation generators for Python (or any language
 really), half the Web will tell you that relying on auto-documentation tools
