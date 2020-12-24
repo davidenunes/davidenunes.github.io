@@ -36,14 +36,15 @@ instead of writing good useful documentation by hand, is a bad practice. They
 are partially right, but real projects are not a salty thread from Reddit, so
 take all the advice, like anything else, critically!
 
-Open source project success can depend on well you communicate about it with
-your community. Nevertheless, there is something to be said about generating
-useful documentation from existing source files. In the case of Python,
-**docstrings** are at the frontline of your project documentation. Note that not
-every project will benefit from a publicly documented API, but some (e.g. like a
-library of re-usable components) will. Creating reference documentation is
-essencial for foundational, especially when the number of components in the
-library is extensive. Examples of such projects include:
+Open source project success can depend on how well you communicate about it with
+your community and good documentation is an important component of this process.
+Nevertheless, there is something to be said about generating useful
+documentation from existing source files. In the case of Python, **docstrings**
+are at the frontline of your project documentation. Not every project will
+benefit from a publicly documented API, but some will (e.g. a library of
+re-usable components). Creating reference documentation is essencial when the
+number of components in a library or framework is extensive. Examples of such
+projects include:
 
 * [NumPy Reference](https://numpy.org/doc/stable/reference/index.html)
 * [Tensorflow API](https://www.tensorflow.org/api_docs/python/tf)
