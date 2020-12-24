@@ -15,6 +15,8 @@ categories:
   - api
 ---
 
+![](/assets/images/automation_python.png)
+
 [mkgendocs](https://github.com/davidenunes/mkgendocs){:target="_blank"} is a
 Python package for automatically generating documentation pages in **markdown**
 from Python source files, by parsing Google-style **docstring**.
