@@ -22,6 +22,15 @@ categories:
   - api
 ---
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@davidelnunes">
+<meta name="twitter:creator" content="@davidelnunes">
+<meta name="twitter:title" content="Python Autodocs with MkGenDocs">
+<meta name="twitter:description" content="mkgendocs is a
+Python package for automatically generating documentation pages in **markdown**
+from Python source files, by parsing Google-style **docstring**.">
+<meta name="twitter:image" content="http://davidenunes.com//assets/images/automation_python.png">
+
 # mkgendocs
 
 [mkgendocs](https://github.com/davidenunes/mkgendocs){:target="_blank"} is a
