@@ -69,9 +69,9 @@ and taking _arg max_. In other words:
 This eliminates the need for the marginalization (which can be expensive for
 high-dimensional vectors). Another consequence of doing away with the
 computation of a _normalized_ probability distribution, is the fact that we
-don't need to see all of the data before it can start partially sampling. Thus,
-**Gumbel-Max** can be used for **weighted sampling from a stream**
-(see [this](http://utopia.duth.gr/~pefraimi/research/data/2007EncOfAlg.pdf)). The
+don't need to see all of the data before doing partial sampling, this means
+**Gumbel-Max** can be used for **weighted sampling from a stream** (see
+[this](http://utopia.duth.gr/~pefraimi/research/data/2007EncOfAlg.pdf)). The
 [Gumbel Distribution](https://en.wikipedia.org/wiki/Gumbel_distribution) is used
 to model the distribution of the maximum (or the minimum) of a number of samples
 of various distributions and, as it turns out, \\(z_i\\) is distributed
@@ -86,7 +86,7 @@ according to a softmax function \\(\sigma(y)\\).
 
 
 Gumbel distribution with location parameter \\(\\alpha\\) and unit scale
-parameter as the following Cumulative Distribution Function (CDF):
+parameter has the following Cumulative Distribution Function (CDF):
 
 \\[
     F(z;\alpha) =  \exp \left[ -\exp\left[-(z-\alpha) \right]\right]
