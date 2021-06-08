@@ -20,7 +20,7 @@ categories:
 If you work with libraries such as [NumPy](https://numpy.org/),
 [Jax](https://jax.readthedocs.io/en/latest/)
 [Tensorflow](https://www.tensorflow.org/), or [PyTorch](https://pytorch.org/)
-you (should) end-up writing a lot of vectorization code. Instead of using
+you (should) end-up writing a lot of vectorization code: instead of using
 control-flow operations (e.g. for loops), you write code that operates on an
 entire set of values at once. Inputs and outputs of your functions are
 multidimensional arrays or tensors. Lower-level libraries optimized for linear
