@@ -1,6 +1,16 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  <div class="sidebar-buttons">
+    <!--<a href="https://github.com/davidenunes"><span class="icon fab
+    fa-github"></span></a>-->
+    <a href="mailto:davidenunes@pm.me"><span class="icon far
+    fa-envelope"></span></a>
+    <a href="https://twitter.com/davidelnunes"><span class="icon fab fa-twitter"></span> </a>
+    <a href="https://github.com/davidenunes"><span class="icon fab fa-github"></span></a>
+    <!--<a href="https://gitlab.com/davidenunes"><span class="icon fab fa-gitlab"></span></a>-->
+    <a href="{{ site.url }}/feed.xml"><span class="icon fas fa-rss"></span></a>
+  </div>
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
@@ -8,7 +18,7 @@
              alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
       {% endif %}
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
+      {% if s.text %}{{ s.text }}{% endif %}
       {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
     {% endfor %}
     {% if page.sidebar.nav %}

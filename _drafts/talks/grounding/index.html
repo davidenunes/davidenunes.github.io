@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Deep Generative Semantic Grounding</title>
+
+		<meta name="description" content="Presentation about
+		computational semantics">
+		<meta name="author" content="Davide Nunes">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/davex-zen.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+		.uni-logo {
+    			width: 12%;
+    			display: block;
+    			position: fixed;
+    			top: 2.5%;
+    			right: 2.5%;
+    			z-index: 1000;
+		}	
+
+		h4.strong{
+			font-family: 'Montserrat Bold'; 
+			font-size: 0.65em;
+			color: #03181E;
+		}
+		h3.strong{
+			font-family: 'Montserrat Bold'; 
+			font-size: 0.8em;
+			color: #03181E;
+		}
+
+		h2.strong{
+			font-family: 'Montserrat Bold'; 
+			color: #03181E;
+		}
+
+
+		h1.strong{
+			font-family: 'Montserrat Bold'; 
+			color: #03181E;
+		}
+
+		ul.references{
+			list-style-type: square;	
+		}
+		li.reference{
+			font-family: 'Inconsolata';
+			font-size: 0.5em;
+		}
+
+		li.monotext{
+			font-family: 'Inconsolata';
+			font-size: 0.8em;
+			list-style-type: none;
+		}
+		li.monotexto{
+			font-family: 'Inconsolata';
+			font-size: 0.8em;
+		}
+
+
+
+		div.leftCol {
+    			width: 60%;
+    			height: 100%;
+    			float: left;
+		}
+		div.rightCol {
+    			margin-left: 15%;
+    			height: 100%;
+		}
+
+		span.vspace{
+			display: block; 
+			margin-bottom: 0.5em
+		}
+		
+		#dissem{
+			font-family: 'Inconsolata';
+
+			font-size:0.5em;
+		}
+
+		</style>
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+	<!-- 
+	********************************************************************
+	*			Presentation Content
+	********************************************************************
+	-->
+	<div class="reveal center">
+		<img src="img/ulisboa.svg" class="uni-logo">
+
+
+            	<div class="slides">
+		<section>
+			<section data-background="img/ann-background.jpg">
+            		<h2>Deep Generative Semantic Grounding</h2>
+			
+			<h4 class="strong"></h4>
+
+			<span style="display: block; margin-bottom: 2em"></span>	
+		
+			<p style="font-family: 'Montserrat Regular'; font-size:
+			0.8em;">
+				Davide Nunes
+			</p>
+            		</section>
+			<section>
+			<h3 class="strong">What are we talking about?</h3>
+			<span style="display: block; margin-bottom: 1em"></span>	
+			
+			<div align="left">
+				<p><span
+					class="highlight">Defining</span> <b>meaning</b></p>
+				<p><span class="highlight">Symbol grounding</span> through <b>representation learning</b></p>
+				<p><span class="highlight">Techniques</span> from <b>computational semantics</b></p>
+				<p><span class="highlight">Deep learning</span>	and <b>neural networks</b></p>
+				<p><span class="highlight">Generative</span> <b>probabilistic models</b></p>
+				<p><span class="highlight">Hiperdimensional computing</span> and <b>random projections</b></p>
+			</div>
+			</section>
+			<section data-background="img/mars_curiosity.jpg">
+				<h3 class="strong">Ultimate Goal</h3>
+
+				<p>To enable machines to <span class="highlight">understand</span> the
+				world.</p>
+			</section>
+		</section>
+
+		<section data-background="img/galaxy-background.jpg">
+			<h3 class="strong">The hitchicker's guide to meaning</h3>
+		</section>
+
+		<section>
+			
+			<section>
+			<h3 class="strong">Ontology</h3>
+			</section>	
+			<section data-background="img/dbpedia-background.png">
+			<h3 class="strong">Ontology In <span class="highlight">Computer Science</span></h3>
+			<h4 class=" fragment strong">Keystone of the Semantic Web</h4>
+			<span style="display: block; margin-bottom: 1em"></span>
+
+			<p class="fragment monotext">
+				 Formal definition
+					of <span class="highlight">names</span>,
+					<span class="highlight">classes</span>,
+					<span
+					class="highlight">properties</span>, and
+				<span class="highlight">relationships</span> between entities 
+					in a given domain. 
+					</p>	
+			</section>
+			<section data-background="img/dbpedia-background.png">
+				<h3 class="strong"> Problems with Formal
+					Ontology </h3>	
+				<span style="display: block; margin-bottom: 1em"></span>	
+				<p class="fragment">No <span
+					class="highlight">motivation</span> nor reward to
+				<span class="highlight">adopt</span> them</p>	
+				<p class="fragment">They require<span
+					class="highlight"> ontology engineering</span> skills</p>
+			
+				<p class="fragment"><span class="highlight">Merging</span> ontologies requires
+				<span class="highlight">consensus</span></p>
+				<p class="fragment">They <span class="highlight">describe</span> very little about the world</p>
+				<p class="fragment"><b><span
+				class="highlight">Grounded on humans</span>, not on actual data</b></p>
+			</section>
+
+		</section>
+		<section>
+			<section>
+				<h3 class="strong">Philosophy of Meaning</h3>
+			</section>
+			
+			<section data-background="img/philosophy-background.jpg">
+				<h3 class="strong"><span
+						class="highlight">Signs</span> :
+				Signifier and Signified</h3>
+				<h4 class="strong">(De Saussure 1916)</h4>
+				<ul>
+					<li class="monotext fragment">The nature
+					of language is not in its origin
+					(etymology) but in
+					its use;	
+					<span class="vspace"></span></li>
+					
+					<li class="monotext fragment">
+					<span class="highlight">Sign = Signifier + Signified</span>: the
+					signified is a "concept" while the
+					signifier is a stimuli;</li>
+					<span class="vspace"></span>
+					
+					<li class="monotext fragment"> Arbitrary relationship
+					between <span class="highlight">signifier</span>
+					and <span class="highlight">signified</span> (a	cat would be a cat by any other name);</li>	
+					<span class="vspace"></span>
+					<li class="monotext fragment">Language is a
+					<span class="highlight">system of
+					differences</span>: what matters is the unique
+					identity among other signs.</li>	
+				</ul>
+				</br>
+
+				<span class="vspace"></span>
+				<blockquote class="fragment" style="font-size: 0.7em">"Speech has both an individual and a
+				social side, and we cannot conceive of one
+			without the other" — Ferdinand De Saussure</blockquote>	
+
+			</section>
+
+			<section>
+			
+				<h4 class="strong">Systemic Sign Relationships</h4>
+				<img src="img/saussure-rel.svg"
+				style="border-style:none">	
+			</section>
+		</section>
+		<section>
+			<section>
+				<h3 class="strong">Defining Meaning</h3>	
+			</section>
+			
+			<section data-background="img/book-background.jpg">
+				<h3 class="strong">Some definitions of <span class="highlight">Meaning</span></h3>
+
+				<span style="display: block; margin-bottom: 1.5em"></span>	
+				
+				<ul>
+					<li class="fragment monotext">
+					What is meant by a word, text, concept,
+					or action.</li>
+					<span class="vspace"></span>
+
+					<li class="fragment monotext">The non-linguistic
+					cultural correlate, reference, or denotation of
+					a linguistic form;</li>
+					<span class="vspace"></span>
+		
+					<li class="fragment monotext"> In 
+					<span class="highlight">communication</span>:
+					what the source expresses to the receiver, and what is 
+					<span class="highlight">inferred</span> from the
+					current <span class="highlight">context</span>.</li>
+					<span class="vspace"></span>
+
+					<li class="fragment monotext"><b>My
+							definition</b>:  
+					<blockquote>
+					The meaning of a sign is its <span class="highlight">instantiation</span>
+					in terms of <span class="highlight">neural activity patterns</span> in 
+					response to the stimuli that constitutes this sign, along with the 
+					state of the world that makes up its <span class="highlight">context</span>.
+					</blockquote>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+			<h3 class="strong">Why is the problem of meaning important?</h3>
+			<ul>
+				<li class="fragment monotext">Meaning is at the
+				heart of the <span class="highlight">grounding
+					problem</span>;</li> 
+				<span class="vspace"></span>
+
+				<li class="fragment monotext">Meaning and grounding are <em>not</em> the problem but <span
+				class="highlight">the solution</span> to a
+				problem;</li>
+				<span class="vspace"></span>
+				<li class="fragment monotext">A solution that
+				can be instantiated by <span class="highlight">representation learning</span>;</li>	
+			
+				<span class="vspace"></span>
+				<li class="fragment monotext">Better <span class="highlight">speech recognition</span>,
+				<span class="highlight">information retrieval</span>,
+				<span class="highlight" class="highlight">search</span>, linking <span>multiple
+				modalities</span>;</li>
+
+				<span class="vspace"></span>
+				<li class="fragment monotext">If an Artificial
+				Intelligence agent "understands" the world, it
+				can act on it.</li>	
+			</ul>	
+		</section>
+		</section>
+
+		<section data-background="img/deepthought2-background.png">
+			<h3 class="strong">Computational Semantics</h3>	
+		</section>
+
+		<section>
+			<section>
+			<h3 class="strong">Distributional Semantics</h3>
+			<ul>
+				<li class="fragment monotext">
+				<span class="highlight">Distributional Hypothesis</span>: words that occur in the same
+				context tend to have similar meanings (Harris 1954);</li>	
+				<span class="vspace"></span>
+
+				<li class="fragment monotext"><span class="highlight">Bag-of-Words (BoW)</span>: 
+				count co-occurrences with other words or documents;</li>
+				<span class="vspace"></span>
+
+				<li class="fragment monotext">Co-occurrence vectors as
+				<span class="highlight">feature vectors</span>.</li>	
+			</ul>
+			</section>
+
+			<section>
+				<h3 class="strong">Counting co-occurrences</h3>
+				<span id="dissem">
+				<span>he curtains open and the <span
+						class="highlight">moon</span>
+					<span style="color:blue">shining</span> in on the barely
+				</span><br>			
+				<span>ars and the <span style="color:blue">cold</span> , close <span
+						class="highlight">moon</span> " . And
+					neither of the w</span><br>
+				<span>	rough the <span style="color:blue">night</span> with the <span
+						class="highlight">moon</span>
+					<span style="color:blue">shining</span>
+					so <span style="color:blue">brightly</span> , it
+				</span><br>			
+				<span>made in the <span style="color:blue">light</span> of the <span
+						class="highlight">moon</span> . It all
+					boils down , wr</span><br>	
+				<span>surely under a <span style="color:blue">crescent</span> <span
+						class="highlight">moon</span> , thrilled by ice-white
+				</span><br>			
+				<span>	sun , the <span style="color:blue">seasons</span> of the <span
+						class="highlight">moon</span> ? Home , alone , Jay pla
+				</span><br>				
+				
+				<span>m is dazzling snow , the <span
+						class="highlight">moon</span>
+					has <span
+					style="color:blue">risen</span> <span
+				style="color:blue">full</span> and cold
+				</span><br>			
+				<span>	un and the <span style="color:blue">temple</span> of the <span
+						class="highlight">moon</span> , driving out of the hug
+				</span>	<br>			
+				<span>in the <span style="color:blue">dark</span> and now the <span
+						class="highlight">moon</span> rises , full and amber a
+				</span><br>			
+				
+				<span>	bird on the <span style="color:blue">shape</span> of the <span
+						class="highlight">moon</span> over the
+					<span style="color:blue">trees</span> in front</span><br>				
+						
+			</span>
+
+			</section>
+			<section>
+				<h3 class="strong">Counting Co-occurrences</h3>
+				<img src="img/count.jpg"
+				style="border-style:none">
+			</section>	
+			<section>
+				<h3 class="strong">Geometry of Meaning</h3>
+				<img src="img/meaning_vectors.png"
+				style="border-style:none; width: 65%">
+
+
+			<p>
+			$$
+			similarity(x,y) = cos(\theta) = \frac{x \cdot y}{\lVert x \rVert \lVert y \rVert}
+			$$
+			</p>
+
+			</section>
+	
+			<section>
+				<h3 class="strong">Latent Semantic Analysis (LSA)</h3>
+				<h4 class="strong">(Deerwester 1990)</h4>
+				<span style="display: block; margin-bottom: 1.5em"></span>	
+				
+				<ul>
+					<li class="fragment monotext">
+						What about words with
+						<span class="highlight">multiple
+							meanings</span> and
+						<span
+							class="highlight">synonyms</span>?
+					</li>
+					<span class="vspace"></span>
+					
+					<li class="fragment monotext">
+						We need representations that capture the 
+						<span class="highlight">latent structure</span> in the
+						data;
+					</li>
+					<span class="vspace"></span>
+				
+					<li class="fragment monotext">
+						<span class="highlight">LSA</span> 
+						uses <span class="highlight">Singular
+						Value Decomposition (SVD)</span>
+					to find the <span
+						class="highlight">linear</span>
+						subspaces that <span class="highlight">explain the variance</span> in the data.
+					</li>
+				
+				</ul>					
+			</section>
+			<section>
+				<h3 class="strong">Problems with LSA</h3>
+				<span style="display: block; margin-bottom: 2em"></span>	
+
+				<p class="fragment">Assumption that <span class="highlight">latent structure</span> in text can be captured by linear
+				<span class="highlight">convex</span> combinations of linearly independent
+				vectors</p>		
+				<span class="vspace"></span>
+				<p class="fragment">Difficult to integrate new
+				data (<span class="highlight">no on-line
+					learning</span>)</p>
+				<span class="vspace"></span>
+	
+				<p class="fragment">No extrapolation for missing data (<span class="highlight">no smoothing</span>)</p>	
+
+			</section>
+
+		</section>
+
+
+		<section>
+			<section>
+				<h3 class="strong">System Overview</h3>
+				<img src="img/overview.svg"
+				style="border-style:none">
+			</section>
+			<section>
+				<h3 class="strong">Language Modelling</h3>
+			</section>
+			<section>
+				<h3 class="strong">Language Modelling</h3>
+				<span style="display: block; margin-bottom: 2em"></span>	
+				<ul>
+					<li class="monotext">The goal of <span
+						class="highlight">statistical
+					language modelling</span> is to learn the
+				joint probability function of sequences of words
+				in language.</li>
+				<span class="vspace"></span>
+			
+				<li class="monotext fragment">Taking advantage of <b>word
+					order</b> reduces the complexity of language
+				modelling:
+				\(P(w^{t}|w^{t-1},w^{t-2},\ldots,w^{t-n})\\\)</li>
+				<span class="vspace"></span>
+				<li class="monotext fragment">
+				Closer words in the word sequence are statistically more dependent	
+				</li>
+				</ul>
+			</section>
+			<section>
+				<h3 class="strong">Language Modelling with
+					<span class="highlight">Neural
+						Networks</span></h3>
+				<h4 class="strong">(Bengio 2003)</h4>
+		
+				<img src="img/bengio2003.svg"
+				style="border-style:none; width: 60%;">
+
+				<ul><li class="monotext fragment"><b>Corpus log
+						likelihood</b>: $$\frac{1}{T} \sum_t \text{log} f(w_t,w_{t-1},
+	w_{t-2},\dots,w_{t-n+1}; \theta) + R(\theta) $$</li></ul>
+			</section>
+			<section>
+				<h3 class="strong">1-of-V <span class="highlight">Encoding</span></span></h3>
+				<span style="display: block; margin-bottom: 2em"></span>	
+				<img src="img/1ofv.svg"
+				style="border-style:none; width: 80%">
+
+			</section>
+			<section>
+				<h3 class="strong"><span class="highlight">Encoding</span>
+				Text for Neural Networks</h3>
+				<span style="display: block; margin-bottom: 2em"></span>
+				<ul>
+					<li class="monotext">+ <b>Smoothing</b>
+					for free: <span
+						class="highlight">distributed
+						representations</span> deal with
+					missing data implicitly</li>
+					<span class="vspace"></span>
+
+					<li class="monotext">+ <b>End-to-End
+						learning</b>: inner
+					representations are created for a task</li>
+					
+					<span class="vspace"></span>
+				
+					<li class="monotext">- How to deal with
+					<span class="highlight">unknown
+						vocabulary</span>? (On-line learning)</li>
+					<span class="vspace"></span>
+
+					<li class="monotext">
+						- How to encode other types of
+						patterns?
+					</li>
+					<span class="vspace"></span>
+
+					<li class="monotext">- Huge number of
+					parameters: how do we scale it?</li>
+				</ul>
+
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h3 class="strong">Random Indexing</h3>
+				<h4 class="strong">High-dimensional <span class="highlight">Random</span> Representations</h4>
+
+			</section>
+			<section>
+				<h3 class="strong">On <span
+					class="highlight">Random
+					Projections</span></h3>
+			<h4 class="strong"> Johnson-Lindenstrauss Lemma</h4>
+				<span style="display: block; margin-bottom: 1em"></span>
+				<ul>
+					<li class="monotext">For any \(0 <
+					\varepsilon < \frac{1}{2}\\\) and \(x_1, \dots, x_n \in
+					\mathbb{R}^d\\\), there is an \(f: \mathbb{R}^d \rightarrow
+					\mathbb{R}^k\\\) for \(k = O(\varepsilon^{-2}\log n) \\\) such that 
+				<blockquote>
+					$$ \forall i,j \\ (1-\varepsilon) \| x_i -
+					x_j \|^2 \le  \\ \| f(x_i)-f(x_j)\|^2 \\
+					\le (1+\varepsilon)\|x_i - x_j\|^2 $$ 
+				</blockquote>
+					</li>
+					<li class="monotext fragment">A random
+						projection can transform set of points in
+					a <span
+						class="highlight">high-dimensional</span> 
+					space into a space of
+						much <span
+							class="highlight">lower
+							dimension</span> in such
+						a way that <span
+							class="highlight">distances</span>
+						between the points are <span
+							class="highlight">nearly
+							preserved</span>. 
+					</li>
+				</ul>
+
+			</section>
+				
+			<section>
+				<h3 class="strong">Random Indexing</h3>
+				<h4 class="strong">(Kanerva 2000)</h4>
+				<span style="display: block; margin-bottom: 2em"></span>
+				<ul>
+				<li class="monotext">Uses <span
+					class="highlight">sparse ternary
+					entries</span> (+1 and -1) the
+				distortion of the inner products created by the
+				random mapping is zero on average.</li> 
+				<span class="vspace"></span>
+
+				<li class="monotext">
+				$$
+				r_{ij} = \left\{
+				\begin{array}{rl}
+		 		+1 & \mbox{with probability } s/2 \\
+		 		0 & \mbox{with probability } 1 - s \hspace{1em} \\
+		 		-1 & \mbox{with probability } s/2
+				\end{array}
+				\right.
+
+				$$
+				</li>
+				<span class="vspace"></span>
+				
+				<li class="monotext">
+					We can encode an <span
+						class="highlight">arbitrary
+						number</span> of
+					discrete symbols and patterns
+					<span class="highlight">incrementally</span>
+				</li>
+				</ul>
+			</section>
+			<section>
+				<h3 class="strong">Random Indexing Example</h3>
+				<img src="img/ri_vectors.svg"
+				style="border-style:none">
+
+			</section>
+
+		</section>
+		<section>
+			<section>
+				<h3 class="strong">Deep Learning</h3>
+			</section>
+		
+			<section>
+				<h3 class="strong">Deep Learning</h3>
+				<span style="display: block; margin-bottom: 2em"></span>
+
+				<ul>
+					<li class="monotext">Learn <span
+						class="highlight">multiple
+						levels</span> of representation
+					of increasing <span
+						class="highlight">abstraction</span></li>
+					<span class="vspace"></span>
+
+					<li class="monotext fragment">Neural
+					networks with multiple layers are <span
+						class="highlight">hard to
+						train</span>: gradient
+					vanishing/explosion</li>
+					<span class="vspace"></span>
+
+					<li
+					class="monotext fragment"><b>Breakthroughs</b>:
+						<ul>
+							<li><span class="highlight">Unsupervised
+								layer-wise</span> pre-training with
+						supervised fine-tuning
+						<li>New parameter 
+						initialisation techniques that  
+						break symmetry
+						<li>Better
+						<span
+							class="highlight">regularisation</span> methods					
+					</li>
+				</ul>
+			</section>
+			
+						
+			<section>
+				<h3 class="strong">Auto-Encoder</h3>
+				<span style="display: block; margin-bottom: 2em"></span>
+
+				<img src="img/autoencoder.svg"
+				style="border-style:none; width: 65%">
+
+
+			</section>
+			
+			<section>
+				<h3 class="strong">Deep Auto-Encoders</h3>
+				<span style="display: block; margin-bottom: 2em"></span>
+
+				<img src="img/dae.svg"
+				style="border-style:none; width: 50%">
+
+			</section>
+			<section>
+				<h3 class="strong">Denoising Auto-Encoders</h3>
+				<span style="display: block; margin-bottom: 2em"></span>	
+			
+				<div>
+				<img src="img/dae_sampling.svg"
+				style="border-style:none; width: 65%">
+				</div>
+				<div>
+				
+					<ol>
+						<li class="monotexto">Corrupt
+						the input vector \(x\\\) into \(
+						\tilde{x} \\\) (e.g. with Gaussian
+						noise)</li>
+
+						<li class="monotexto">Train the
+						auto-encoder to reconstruct \( x
+						\\\)</li>
+
+						<li class="monotexto">To sample
+						from this model iterate between
+						corruption and reconstruction</li>
+					</ol>
+				
+				</div>
+			</section>
+			<section>
+				<h3 class="strong">Denoising Auto-Encoders</h3>
+				<h4 class="strong"><span class="highlight">Probabilistic Interpretation</span></h4>
+				<span style="display: block; margin-bottom: 1em"></span>	
+				
+				<img src="img/dae_probabilistic.svg"
+				style="border-style:none; width: 50%">
+			</section>
+		</section>
+		
+		<section>
+			<section>
+				<h3 class="strong">Road Map</h3>
+			</section>
+			
+			<section>
+				<h3 class="strong">Semantic Grounding</h3>
+				<h4 class="strong">Representation <span	class="highlight">End-to-End</span> Learning</h4>
+				<span style="display: block; margin-bottom: 1em"></span>
+				<ul>
+					<li class="monotext fragment"><span
+						class="highlight">Learn
+						representations</span> for text from large
+					unlabelled corpora</li>
+					<span class="vspace"></span>
+					<li class="monotext fragment"><span
+						class="highlight">Corpora from
+						the Web</span>: huge but messy resource</span>
+					<span class="vspace"></span>
+					<li class="monotext fragment">Representations
+					learned can be used for <span
+						class="highlight">grounding</span></li>
+					<span class="vspace"></span>
+
+					<li class="monotext fragment">Each possible task
+					also provides <span
+						class="highlight">implicit
+						domain knowledge</span></li>
+					
+
+
+				</ul>
+			</section>
+
+			<section>
+				<h3 class="strong">Tools and Resources</h3>
+				<span style="display: block; margin-bottom: 2em"></span>
+
+				<ul>
+					<li class="monotext"><b>Corpora</b>:
+					<span class="vspace"></span>
+
+					<ul>
+						<li><b><a
+							href="http://wacky.sslmit.unibo.it/doku.ph">WaCky
+							Corpus</a></b>: Web-Crawled
+						Corpora with 2 billion words</li>
+						<li>
+						<a
+							href="https://github.com/davidelnunes/TwitterTools"><b>Twitter
+								Posts</b></a>: containing samples for target words
+						</li>
+						<li>
+						<b><a
+							href="https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment">Reddit
+							Comments</a></b>: 1 TB of publicly
+					available comments from reddit since
+					2007</li>
+					<li><b><a
+							href="https://dumps.wikimedia.org/enwiki/latest/">Wikipedia
+							Dumps</a></b>: latest
+					Wikipedia dumps with more than 3 billion
+					words
+					</ul>	
+				</li>
+				<span class="vspace"></span>
+
+				<li class="monotext"><b><a
+						href="https://www.tensorflow.org/">Tensor
+						Flow</a></b>: open source
+				library for numerical computation using data
+				flow graphs</li>
+
+				</ul>
+
+
+			</section>
+			
+			<section>
+				<h3 class="strong">Work Plan Core Tasks</h3>
+				<span style="display: block; margin-bottom: 1em"></span>
+				
+				<img src="img/core_tasks.svg"
+				style="border-style:none; height: 100%">
+
+			</section>
+			
+			<section>
+				<h3 class="strong">Future Work</h3>
+				<h4 class="strong">Challenges in <span class="highlight">Research</span> and 
+					<span class="highlight">Engineering</span></h4>
+				<span style="display: block; margin-bottom: 2em"></span>
+				<ul>
+				<li class="monotext"><span class="highlight">Multi-modal</span>
+				representation learning
+				</li>
+
+				<span class="vspace"></span>
+
+				<li class="monotext"><span class="highlight">Decentralised
+					emergent</span> representations
+				(Multi-agent System)</li>
+				
+				<span class="vspace"></span>
+
+				<li class="monotext"><b>Other domains</b>:
+				modelling music, DNA sequences,	etc.</li>
+				</ul>
+			</section>
+
+
+		</section>
+
+		<section>
+			<h3 class="strong">References</h3>
+
+			<span style="display: block; margin-bottom: 1em"></span>	
+			<ul class="references">
+				<li class="reference"> 
+					Bengio, Y.; Ducharme, R.; Vincent, P. & Janvin, C. (2003) 
+					<b>A neural probabilistic language model</b>, 
+					The Journal of Machine Learning Research, 3, 1137-1155
+				</li>
+				<li class="reference"> 
+					Bengio, Yoshua, et al. (2013) 
+					<b>Generalized de-noising auto-encoders as generative models</b>, 
+					Advances in Neural Information Processing Systems.
+				</li>
+				<li class="reference">
+					Berners-Lee, T. Fischetti, M. (1999) 
+					<b>Weaving the Web: The Original Design and Ultimate Destiny of the
+					World Wide Web by Its Inventor</b>, 
+					Harper San Francisco.
+				</li>
+				<li class="reference">  
+					Deerwester, S. C.; Dumais, S. T.; Landauer, T. K.; Furnas, G. W. & Harshman, R. A. (1990) 
+					<b>Indexing by latent semantic analysis</b>, 
+					Journal of the American Society for Information Science, 41, 391-407
+				</li>
+				<li class="reference"> 
+					De Saussure, F. (1916) 
+					<b> Nature of the linguistic sign</b>, 
+					Course in general linguistics, 65-70
+				</li>
+				<li class="reference"> 
+					Frege, G. (1948) 
+					<b>Sense and reference The philosophical review</b>, 
+					JSTOR, 57, 209-230 
+				</li>
+				<li class="reference">
+					Harris, Z. S. (1954) 
+					<b>Distributional structure </b>, 
+					Word
+				</li>
+				<li class="reference">  
+					Hinton, G. & Salakhutdinov, R. (2006) 
+					<b>Reducing the	Dimensionality of Data with Neural Networks</b>,
+					Science, 313, 504-507
+				</li>
+				<li class="reference"> 
+					Malcolm, N. (1966) 
+					<b>Wittgenstein’s philosophical investigations</b>,
+					Springer
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3 class="strong">Thank you</h3>
+		</section>
+
+		<section>
+			<section>
+				<h3 class="strong">Extra Material</h3>
+			</section>
+
+			<section>
+				<h3 class="strong">Singular Value
+					Decomposition</h3>
+						<img src="img/svd.svg"
+						style="border-style:none">	
+			</section>
+	<section>
+			<h3 class="strong">Truncated SVD</h3>
+			<div style="width:100%; text-align:center">
+				<div style="float:left; display:table-cell;
+					width:25%">
+					<img src="img/svd_k400.png"
+					width="100%" style="border-style:none">		
+					<figcation style="font-size:medium">400
+					singular vectors / values.</figcation>
+				</div>
+				<div style="float:left; display:table-cell;
+					width:25%">
+					<img src="img/svd_k50.png"
+					width="100%" style="border-style:none">	
+					<figcation
+					style="font-size:medium">50 singular
+					vectors / values.</figcation>
+
+				</div>
+				<div style="float:left; display:table-cell;
+					width:25%">
+					<img src="img/svd_k10.png"
+					width="100%" style="border-style:none">	
+					<figcation
+					style="font-size:medium">10 singular
+					vectors / values.</figcation>
+
+				</div>
+				<div style="float:left; display: table-cell;
+					width:25%">
+					<img src="img/svd_k2.png"
+					width="100%" style="border-style:none">	
+					<figcation
+					style="font-size:medium">2 singular
+					vectors / values.</figcation>
+
+				</div>
+			</div>
+					
+			</section>
+
+			<section>
+				<h3 class="strong">Random Projections</h3>
+				<h4 class="strong"><span
+						class="highlight">Distortion</span></h4>
+					<span style="display: block; margin-bottom: 2em"></span>
+					<div style="float:left; display:table-cell;
+					width:50%">
+					<img src="img/inner_product_distance.svg"
+					width="100%" style="border-style:none">		
+					<figcaption style="font-size:medium">Inner product distribution of randomly generated
+					(Gaussian) vectors.</figcaption>
+				</div>
+				<div style="float:left; display:table-cell;
+					width:50%">
+					<img src="img/rp_lemma.png"
+					width="100%" style="border-style:none">	
+					<figcaption
+					style="font-size:medium">Distortion
+					<em>vs</em> Dimensions</figcaption>
+
+				</div>
+
+			</section>
+				<section>
+					<h3 class="strong">PCA vs Deep Auto-Encoders</h3>
+					<h4 class="strong">(Hinton 2006)</h4>
+				<span style="display: block; margin-bottom: 1em"></span>
+					<div style="float:left; display:table-cell;
+					width:50%">
+					<img src="img/lsa_2d.png"
+					width="81%" style="border-style:none">		
+					<figcaption style="font-size:medium">Two-dimensional codes produced by LSA.	
+					</figcaption>
+				</div>
+				<div style="float:left; display:table-cell;
+					width:50%; height:80%">
+					<img src="img/dae_2d.jpg"
+					width="100%" style="border-style:none">	
+					<figcaption style="font-size:medium">
+					Two-dimensional codes produced by a
+					2000-250-125-2 auto-encoder.
+					</figcaption>
+
+				</div>
+
+			</section>
+
+			<section>
+				<h3 class="strong">Restricted Boltzmann Machines</h3>
+				<span style="display: block; margin-bottom: 2em"></span>
+
+				<img src="img/rbm.svg"
+				style="border-style:none; width: 50%">
+				
+				<ul>
+					<li class="monotext">$$
+					P(x_i=1|h) = f\left( \sum_j w_{ij}h_j + b_i \right)$$
+   					</li>
+
+					<li class="monotext">$$
+					P(h_j=1|x) = f \left( \sum_i w_{ij}x_i + c_j \right)	
+					$$</li>
+				</ul>
+
+			</section>
+
+
+
+			<section>
+				<h3 class="strong">Deep Belief Networks</h3>
+				<span style="display: block; margin-bottom: 2em"></span>
+
+				<img src="img/dbn.svg"
+				style="border-style:none; width: 65%">
+
+
+			</section>
+
+		</section>
+            	</div>
+        </div>
+ 		
+	<!-- 
+	********************************************************************
+	*					REVEAL.JS CONFIGURATION
+	********************************************************************
+	-->
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+
+			// Shows the slide number using default formatting
+			//slideNumber: true,
+			slideNumber: 'c',
+			math: {
+        			mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+        			config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+    			},
+
+			
+			transition: 'slide', 
+			
+			dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/menu/menu.js', async: true },
+        		{ src: 'plugin/math/math.js', async: true }
+			]
+			});
+
+	</script>
+
+	</body>
+</html>
