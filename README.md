@@ -5,6 +5,5 @@
 
 This website is based on a modified version of the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes) theme.
 
-
 ---
 
