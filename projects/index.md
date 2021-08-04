@@ -8,6 +8,5 @@ header:
   overlay_image: /assets/images/glitch.gif
 ---
 
-### <span class="fa fa-hammer"> Coming Soon: Under Construction <span class="fa fa-paint-roller">
+### Coming Soon: Under Construction <span class="fa fa-paint-roller">
 
-<img src="/assets/images/ai_busy.png" width="35%" alt="" class="align-center">
