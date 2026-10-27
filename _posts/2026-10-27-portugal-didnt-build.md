@@ -88,8 +88,8 @@ Eighty years ago they were already saying that housing could not be left to spec
 ## Sources
 
 - Keil do Amaral, *O Problema da Habitação* (Cadernos Azuis, Livraria Latina Editora, Porto, 1945).
-- Banco de Portugal, Economic Bulletin of March 2026, box 3 (effort rates); Banco de Portugal, cited by RFM (payment equal to income in Lisbon, rfm.pt/atualidade/23122).
-- Banco de Portugal, "Habitação em Portugal nos últimos 40 anos" (2023), cited by idealista (owners by generation).
+- Banco de Portugal, Economic Bulletin of March 2026, box 3 (effort rates); Banco de Portugal
+- Banco de Portugal, "Habitação em Portugal nos últimos 40 anos" (2023)
 - [Diário de Notícias, "30 anos de PER"](https://www.dn.pt/local/30-anos-de-per-o-programa-que-acabou-com-mais-de-10-mil-barracas-de-lisboa-16016778.html) (34,759 homes and 32,333 households rehoused).
 - [Climate and Community Institute](https://climateandcommunity.org/research/vienna-green-social-housing/) (Vienna); [Housing Ireland](https://housingireland.ie/denmarks-nonprofit-housing-model/) (Denmark).
 - Naqvi, Béland and Waddan, ["Housing affordability and Thatcher's right-to-buy policy"](https://www.transformingsociety.co.uk/2022/04/12/housing-affordability-and-thatchers-right-to-buy-policy/), Transforming Society, 2022.
@@ -157,8 +157,8 @@ Há oitenta anos já se dizia que a habitação não podia ficar entregue à esp
 ## Fontes
 
 - Keil do Amaral, *O Problema da Habitação* (Cadernos Azuis, Livraria Latina Editora, Porto, 1945).
-- Banco de Portugal, Boletim Económico de março de 2026, caixa 3 (percentagens de esforço); Banco de Portugal, citado pela RFM (prestação igual ao rendimento em Lisboa, rfm.pt/atualidade/23122).
-- Banco de Portugal, «Habitação em Portugal nos últimos 40 anos» (2023), citado pelo idealista (proprietários por geração).
+- Banco de Portugal, Boletim Económico de março de 2026, caixa 3 (percentagens de esforço); Banco de Portugal.
+- Banco de Portugal, «Habitação em Portugal nos últimos 40 anos» (2023).
 - [Diário de Notícias, «30 anos de PER»](https://www.dn.pt/local/30-anos-de-per-o-programa-que-acabou-com-mais-de-10-mil-barracas-de-lisboa-16016778.html) (34.759 casas e 32.333 agregados realojados).
 - [Climate and Community Institute](https://climateandcommunity.org/research/vienna-green-social-housing/) (Viena); [Housing Ireland](https://housingireland.ie/denmarks-nonprofit-housing-model/) (Dinamarca).
 - Naqvi, Béland e Waddan, [«Housing affordability and Thatcher's right-to-buy policy»](https://www.transformingsociety.co.uk/2022/04/12/housing-affordability-and-thatchers-right-to-buy-policy/), Transforming Society, 2022.
