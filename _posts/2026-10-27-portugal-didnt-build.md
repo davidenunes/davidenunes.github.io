@@ -87,16 +87,17 @@ Eighty years ago they were already saying that housing could not be left to spec
 
 ## Sources
 
-- Keil do Amaral, *O Problema da Habitação* (Cadernos Azuis, Livraria Latina Editora, Porto, 1945).
-- Banco de Portugal, Economic Bulletin of March 2026, box 3 (effort rates); Banco de Portugal
-- Banco de Portugal, "Habitação em Portugal nos últimos 40 anos" (2023)
-- [Diário de Notícias, "30 anos de PER"](https://www.dn.pt/local/30-anos-de-per-o-programa-que-acabou-com-mais-de-10-mil-barracas-de-lisboa-16016778.html) (34,759 homes and 32,333 households rehoused).
-- [Climate and Community Institute](https://climateandcommunity.org/research/vienna-green-social-housing/) (Vienna); [Housing Ireland](https://housingireland.ie/denmarks-nonprofit-housing-model/) (Denmark).
-- Naqvi, Béland and Waddan, ["Housing affordability and Thatcher's right-to-buy policy"](https://www.transformingsociety.co.uk/2022/04/12/housing-affordability-and-thatchers-right-to-buy-policy/), Transforming Society, 2022.
-- Robertson, M., ["The great British housing crisis"](https://doi.org/10.1177/0309816816678571), *Capital & Class*, 41(2), pp. 195-215, 2017.
-- Ostry, Loungani and Furceri, "Neoliberalism: Oversold?", *Finance & Development*, 2016 ([transcript](https://twn.my/title2/resurgence/2016/310-311/cover03.htm)).
-- Santos, Teles and Serra, ["Finança e habitação em Portugal"](https://www.ces.uc.pt/observatorios/crisalt/documentos/cadernos/CadernoObserv_II_julho2014.pdf), Centro de Estudos Sociais, University of Coimbra, 2014.
-- Raquel Albuquerque and Sofia Miguel Rosa, ["Nas áreas metropolitanas, 10% das casas estão vazias"](https://www.iscte-iul.pt/assets/files/2025/02/03/115386350.pdf), *Expresso*, 31 January 2025 (2021 Census, INE).
+- Keil do Amaral, [*O Problema da Habitação*](https://oasrs.org/media/uploads/o%20problema%20da%20habitacao.pdf), Cadernos Azuis, Livraria Latina Editora, Porto, 1945.
+- Banco de Portugal, [Boletim Económico](https://www.bportugal.pt/publicacao/boletim-economico-marco-2026) de Março de 2026.
+- Banco de Portugal, [Habitação em Portugal nos últimos 40 anos](https://www.bportugal.pt/sites/default/files/forum_economia_habitacao_portugal.pdf), 2023.
+- [Diário de Notícias, «30 anos de PER»](https://www.dn.pt/local/30-anos-de-per-o-programa-que-acabou-com-mais-de-10-mil-barracas-de-lisboa-16016778.html), 2023. 
+- [Climate and Community Institute](https://climateandcommunity.org/research/vienna-green-social-housing/) (Viena); [Housing Ireland](https://housingireland.ie/denmarks-nonprofit-housing-model/) (Denmark), 2026.
+- Naqvi, Béland e Waddan, [«Housing affordability and Thatcher's right-to-buy policy»](https://www.transformingsociety.co.uk/2022/04/12/housing-affordability-and-thatchers-right-to-buy-policy/), Transforming Society, 2022.
+- Robertson, M., [The great British housing crisis](https://doi.org/10.1177/0309816816678571), *Capital & Class*, 41(2), pp. 195-215, 2017.
+- Ostry, Loungani e Furceri, ["Neoliberalism: Oversold?"](https://twn.my/title2/resurgence/2016/310-311/cover03.htm), *Finance & Development*, 2016.
+- Santos, Teles e Serra, [«Finança e habitação em Portugal»](https://www.ces.uc.pt/observatorios/crisalt/documentos/cadernos/CadernoObserv_II_julho2014.pdf), Centro de Estudos Sociais, Universidade de Coimbra, 2014.
+- Raquel Albuquerque e Sofia Miguel Rosa, [«Nas áreas metropolitanas, 10% das casas estão vazias»](https://www.iscte-iul.pt/assets/files/2025/02/03/115386350.pdf), *Expresso*, 31 de janeiro de 2025 ([Censos 2021](https://censos.ine.pt/xportal/xmain?xpgid=censos21_main&xpid=CENSOS21&xlang=pt), INE).
+
 
 </div>
 
@@ -156,16 +157,16 @@ Há oitenta anos já se dizia que a habitação não podia ficar entregue à esp
 
 ## Fontes
 
-- Keil do Amaral, *O Problema da Habitação* (Cadernos Azuis, Livraria Latina Editora, Porto, 1945).
-- Banco de Portugal, Boletim Económico de março de 2026, caixa 3 (percentagens de esforço); Banco de Portugal.
-- Banco de Portugal, «Habitação em Portugal nos últimos 40 anos» (2023).
-- [Diário de Notícias, «30 anos de PER»](https://www.dn.pt/local/30-anos-de-per-o-programa-que-acabou-com-mais-de-10-mil-barracas-de-lisboa-16016778.html) (34.759 casas e 32.333 agregados realojados).
-- [Climate and Community Institute](https://climateandcommunity.org/research/vienna-green-social-housing/) (Viena); [Housing Ireland](https://housingireland.ie/denmarks-nonprofit-housing-model/) (Dinamarca).
+- Keil do Amaral, [*O Problema da Habitação*](https://oasrs.org/media/uploads/o%20problema%20da%20habitacao.pdf), Cadernos Azuis, Livraria Latina Editora, Porto, 1945.
+- Banco de Portugal, [Boletim Económico](https://www.bportugal.pt/publicacao/boletim-economico-marco-2026) de Março de 2026.
+- Banco de Portugal, [Habitação em Portugal nos últimos 40 anos](https://www.bportugal.pt/sites/default/files/forum_economia_habitacao_portugal.pdf), 2023.
+- [Diário de Notícias, «30 anos de PER»](https://www.dn.pt/local/30-anos-de-per-o-programa-que-acabou-com-mais-de-10-mil-barracas-de-lisboa-16016778.html), 2023. 
+- [Climate and Community Institute](https://climateandcommunity.org/research/vienna-green-social-housing/) (Viena); [Housing Ireland](https://housingireland.ie/denmarks-nonprofit-housing-model/) (Denmark), 2026.
 - Naqvi, Béland e Waddan, [«Housing affordability and Thatcher's right-to-buy policy»](https://www.transformingsociety.co.uk/2022/04/12/housing-affordability-and-thatchers-right-to-buy-policy/), Transforming Society, 2022.
-- Robertson, M., [«The great British housing crisis»](https://doi.org/10.1177/0309816816678571), *Capital & Class*, 41(2), pp. 195-215, 2017.
-- Ostry, Loungani e Furceri, «Neoliberalism: Oversold?», *Finance & Development*, 2016 ([transcrição](https://twn.my/title2/resurgence/2016/310-311/cover03.htm)).
+- Robertson, M., [The great British housing crisis](https://doi.org/10.1177/0309816816678571), *Capital & Class*, 41(2), pp. 195-215, 2017.
+- Ostry, Loungani e Furceri, ["Neoliberalism: Oversold?"](https://twn.my/title2/resurgence/2016/310-311/cover03.htm), *Finance & Development*, 2016.
 - Santos, Teles e Serra, [«Finança e habitação em Portugal»](https://www.ces.uc.pt/observatorios/crisalt/documentos/cadernos/CadernoObserv_II_julho2014.pdf), Centro de Estudos Sociais, Universidade de Coimbra, 2014.
-- Raquel Albuquerque e Sofia Miguel Rosa, [«Nas áreas metropolitanas, 10% das casas estão vazias»](https://www.iscte-iul.pt/assets/files/2025/02/03/115386350.pdf), *Expresso*, 31 de janeiro de 2025 (Censos 2021, INE).
+- Raquel Albuquerque e Sofia Miguel Rosa, [«Nas áreas metropolitanas, 10% das casas estão vazias»](https://www.iscte-iul.pt/assets/files/2025/02/03/115386350.pdf), *Expresso*, 31 de janeiro de 2025 ([Censos 2021](https://censos.ine.pt/xportal/xmain?xpgid=censos21_main&xpid=CENSOS21&xlang=pt), INE).
 
 </div>
 
