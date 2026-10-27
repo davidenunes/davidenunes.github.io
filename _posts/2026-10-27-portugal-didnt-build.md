@@ -91,7 +91,8 @@ Eighty years ago they were already saying that housing could not be left to spec
 - Banco de Portugal, [Boletim Económico](https://www.bportugal.pt/publicacao/boletim-economico-marco-2026) de Março de 2026.
 - Banco de Portugal, [Habitação em Portugal nos últimos 40 anos](https://www.bportugal.pt/sites/default/files/forum_economia_habitacao_portugal.pdf), 2023.
 - [Diário de Notícias, 30 anos de PER](https://www.dn.pt/local/30-anos-de-per-o-programa-que-acabou-com-mais-de-10-mil-barracas-de-lisboa-16016778.html), 2023. 
-- [Climate and Community Institute](https://climateandcommunity.org/research/vienna-green-social-housing/) (Viena); [Housing Ireland](https://housingireland.ie/denmarks-nonprofit-housing-model/) (Denmark), 2026.
+- [Climate and Community Institute](https://climateandcommunity.org/research/vienna-green-social-housing/) (Viena), 2026.
+- [Housing Ireland](https://housingireland.ie/denmarks-nonprofit-housing-model/) (Denmark), 2026.
 - Naqvi, Béland e Waddan, [Housing affordability and Thatcher's right-to-buy policy](https://www.transformingsociety.co.uk/2022/04/12/housing-affordability-and-thatchers-right-to-buy-policy/), Transforming Society, 2022.
 - Robertson, M., [The great British housing crisis](https://doi.org/10.1177/0309816816678571), *Capital & Class*, 41(2), pp. 195-215, 2017.
 - Ostry, Loungani e Furceri, ["Neoliberalism: Oversold?"](https://twn.my/title2/resurgence/2016/310-311/cover03.htm), *Finance & Development*, 2016.
