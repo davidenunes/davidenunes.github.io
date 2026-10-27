@@ -16,7 +16,7 @@ header:
 
 ### Recent Work
 
-* Maximizing mRNA vaccine production with Bayesian optimization [url](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/bit.28216)
+* Maximizing mRNA vaccine production with Bayesian optimization [[url](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/bit.28216)]
 * PTNews Corpus for Language Modelling. [[url]](https://davidenunes.com/ptnews/) [[doi]](https://doi.org/10.5281/zenodo.3908507)
 * TensorX: Extensible API for Neural Network Model Design and Deployment [[preprint]](https://arxiv.org/abs/2012.14539)
 * Neural Random Projections for Language Modelling. Working Paper [[preprint]](https://arxiv.org/abs/1807.00930)
