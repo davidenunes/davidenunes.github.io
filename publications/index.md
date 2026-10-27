@@ -12,17 +12,14 @@ header:
 
 
 [<span class="fa fa-university">ORCID</span>](https://orcid.org/0000-0001-9689-9804) 
-
 [<span class="fa fa-graduation-cap">Google Scholar</span>](https://scholar.google.pt/citations?user=ppBShNwAAAAJ)
 
-### Recent Work & Work in Progress
+### Recent Work
 
-* Nunes, D., Antunes, L. (2021-). Compressed predictions: language modelling with unknown lexicon [WIP]
-* Nunes, D., Antunes, L. (2021-). Machines of Meaning [WIP]
-* Nunes, D. (2021-). Learning Stochastic Neural Networks with Neural Random Projections [WIP]
-* Nunes, D. (2020-). PTNews Corpus for Language Modelling. [[url]](https://davidenunes.com/ptnews/) [[doi]](https://doi.org/10.5281/zenodo.3908507)
-* Nunes, D., Antunes, L. (2020-). TensorX: Extensible API for Neural Network Model Design and Deployment [[preprint]](https://arxiv.org/abs/2012.14539)
-* Nunes, D., Antunes, L. (2018-). Neural Random Projections for Language Modelling. Working Paper [[preprint]](https://arxiv.org/abs/1807.00930)
+* Maximizing mRNA vaccine production with Bayesian optimization [pdf](https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/full/10.1002/bit.28216)
+* PTNews Corpus for Language Modelling. [[url]](https://davidenunes.com/ptnews/) [[doi]](https://doi.org/10.5281/zenodo.3908507)
+* TensorX: Extensible API for Neural Network Model Design and Deployment [[preprint]](https://arxiv.org/abs/2012.14539)
+* Neural Random Projections for Language Modelling. Working Paper [[preprint]](https://arxiv.org/abs/1807.00930)
 
 ### Social Simulation
 
