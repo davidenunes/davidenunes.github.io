@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="309.6pt" viewBox="0 0 576 309.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-27T20:53:43.947400</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 309.6 
+L 576 309.6 
+L 576 0 
+L 0 0 
+L 0 309.6 
+z
+" style="fill: none; opacity: 0"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 23.04 247.68 
+L 564.48 247.68 
+L 564.48 68.112 
+L 23.04 68.112 
+L 23.04 247.68 
+z
+" style="fill: none; opacity: 0"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 47.650909 247.68 
+L 111.853281 247.68 
+L 111.853281 92.13696 
+L 47.650909 92.13696 
+z
+" clip-path="url(#p8825704afb)" style="fill: #2f8aa5"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 154.654862 247.68 
+L 218.857233 247.68 
+L 218.857233 194.30496 
+L 154.654862 194.30496 
+z
+" clip-path="url(#p8825704afb)" style="fill: #8cc7d8"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 261.658814 247.68 
+L 325.861186 247.68 
+L 325.861186 199.123574 
+L 261.658814 199.123574 
+z
+" clip-path="url(#p8825704afb)" style="fill: #8cc7d8"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 368.662767 247.68 
+L 432.865138 247.68 
+L 432.865138 241.636608 
+L 368.662767 241.636608 
+z
+" clip-path="url(#p8825704afb)" style="fill: #8cc7d8"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 475.666719 247.68 
+L 539.869091 247.68 
+L 539.869091 247.519008 
+L 475.666719 247.519008 
+z
+" clip-path="url(#p8825704afb)" style="fill: #e0663f"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #7a8288" transform="translate(55.416196 258.005317)">5 anos antes</text>
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #7a8288" transform="translate(53.050806 267.256538)">da lei de 1980</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #7a8288" transform="translate(160.293157 258.005317)">5 anos depois</text>
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #7a8288" transform="translate(160.054758 267.256538)">da lei de 1980</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #7a8288" transform="translate(274.152891 258.076538)">Média dos</text>
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #7a8288" transform="translate(278.637305 267.327759)">anos 80</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #7a8288" transform="translate(381.156843 258.076538)">Média dos</text>
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; fill: #7a8288" transform="translate(385.641257 267.327759)">anos 90</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 8.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #7a8288" x="507.767905" y="257.368232" transform="rotate(-0 507.767905 257.368232)">2004</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_8">
+    <path d="M 23.04 247.68 
+L 564.48 247.68 
+" style="fill: none; stroke: #c9cdd0; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #494e52" x="79.752095" y="89.04096" transform="rotate(-0 79.752095 89.04096)">125 600</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #494e52" x="186.756047" y="191.20896" transform="rotate(-0 186.756047 191.20896)">43 100</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #494e52" x="293.76" y="196.027574" transform="rotate(-0 293.76 196.027574)">39 209</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #494e52" x="400.763953" y="238.540608" transform="rotate(-0 400.763953 238.540608)">4 880</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #494e52" x="507.767905" y="244.423008" transform="rotate(-0 507.767905 244.423008)">130</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-weight: 700; font-size: 13px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #494e52" x="11.52" y="23.466688" transform="rotate(-0 11.52 23.466688)">Casas municipais construídas por ano no Reino Unido</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 9.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7a8288" x="11.52" y="39.42426" transform="rotate(-0 11.52 39.42426)">Casas por ano; o direito de compra (Right to Buy) entrou em vigor com a lei de habitação de 1980</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 7.5px; font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #7a8288" x="11.52" y="301.829631" transform="rotate(-0 11.52 301.829631)">Fonte: House of Lords Library, Right to Buy: past, present and future.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8825704afb">
+   <rect x="23.04" y="68.112" width="541.44" height="179.568"/>
+  </clipPath>
+ </defs>
+</svg>
