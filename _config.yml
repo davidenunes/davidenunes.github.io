@@ -142,9 +142,6 @@ footer:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
-    - label: "Medium"
-      icon: "fab fa-fw fa-medium"
-      url: "https://medium.com/@davidelnunes"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
